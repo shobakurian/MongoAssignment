@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }}</title>
+</head>
+<body>
+    {{#each book}}
+    <h1>{{ this.title }}</h1>
+    <p> {{ this.author }}</p>
+    <p> {{ this.price }}</p>
+    <p> {{ this.pages }}</p>
+    <p> {{ this.avg_reviews }}</p>
+    <p>{{ this.n_reviews }}</p>
+    <p> {{ this.star }}</p>
+    <p> {{ this.dimensions }}</p>
+    <p>{{ this.weight }}</p>
+    <p>{{ this.language }}</p>
+    <p>{{ this.publisher }}</p>
+    <p> <a href="{{ this.complete_link }}">{{ this.complete_link }}</a></p>
+   
+    {{/each}}
+     <p>© 2024 Bookstore. All rights reserved.</p>
+</body>
+</html>
